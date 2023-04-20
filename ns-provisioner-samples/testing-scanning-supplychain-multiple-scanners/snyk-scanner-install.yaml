@@ -9,7 +9,7 @@
 #@   snyk_values["namespace"] = data.values.name
 #@   snyk_values["targetImagePullSecret"] = "registries-credentials"
 #@   snyk_values["snyk"] = {"tokenSecret": {"name": "snyk-token-secret"}}
-#@   snyk_values["metadataStore"] = {"url": ""}
+#@   snyk_values["metadataStore"] = {"url": "https://metadata-store.sks.view.cloudfocused.in", "caSecret": {"name": "app-tls-cert","importFromNamespace": ""},"authSecret": {"name": "store-auth-token","importFromNamespace": ""}}
 #@   return snyk_values
 #@ end
 #@ if in_list('supply_chain', ['testing_scanning']) and in_list('profile', ['full', 'build']):
